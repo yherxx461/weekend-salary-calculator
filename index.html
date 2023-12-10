@@ -9,9 +9,48 @@
   <header>
     <h1>Salary Calculator</h1>
   </header>
+  <div id="employeeList"></div> 
   <main>
     <h2>Add Employee</h2>
+    <!-- form list with *first name, last name, ID number, job title, annual salary*. -->
+    <form>
+      <input id="firstName" type="text" data-testid="Input>
+      <input id="lastName" tyype="text" data-testid="Input>
+      <input id="id" type="text" data-testid="Input>
+      <input id="title" type="text" data-testid="Input>
+      <input id="annualSalary" type="text" data-testid="Input>
+      <button data-testid="submitButton">Submit</button>
+      <div button></div>
+    </form>
     <h2>Employees</h2>
+    <table id="customers">
+      <!-- Table heading displays the descriptions -->
+      <thead>
+          <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Annual Salary</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody id="salaryCalculator">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td><button onClick="deleteButton(event)" class="deleteButton">Delete</button></td> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button onClick="deleteButton(event)" class="deleteButton">Delete</button></td>
+        </tr>
   </main>
   <footer>
     <p>Total Monthly</p>
