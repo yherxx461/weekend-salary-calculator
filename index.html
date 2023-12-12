@@ -9,21 +9,20 @@
   <header>
     <h1>Salary Calculator</h1>
   </header>
-  <div id="employeeList"></div> 
+  <div id="container"> 
   <main>
     <h2>Add Employee</h2>
     <!-- form list with *first name, last name, ID number, job title, annual salary*. -->
-    <form>
-      <input id="firstName" type="text" data-testid="Input>
-      <input id="lastName" tyype="text" data-testid="Input>
-      <input id="id" type="text" data-testid="Input>
-      <input id="title" type="text" data-testid="Input>
-      <input id="annualSalary" type="text" data-testid="Input>
-      <button data-testid="submitButton">Submit</button>
-      <div button></div>
+    <form id="employeeForm">
+      <input type="text" id="firstName" placeholder="First Name" data-testedid="firstNameInput">
+      <input type="text" id="lastName" placeholder="Last Name" data-testedid="lastNameInput">
+      <input type="text" id="id" placeholder="ID" data-testedid="idInput">
+      <input type="text" id="title" placeholder="Title" data-testedid="titleInput">
+      <input type="text" id="annualSalary" placeholder="Annual Salary" data-testedid="annualSalaryInput">
+      <button type="button" onclick="submitForm()">Submit</button>
     </form>
     <h2>Employees</h2>
-    <table id="customers">
+    <table>
       <!-- Table heading displays the descriptions -->
       <thead>
           <tr>
@@ -42,18 +41,13 @@
             <td></td>
             <td></td>
             <td></td> 
-            <td><button onClick="deleteButton(event)" class="deleteButton">Delete</button></td> 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button onClick="deleteButton(event)" class="deleteButton">Delete</button></td>
-        </tr>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tbody>
+        </table>
+      </div>
   </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
 </body>
+<footer id="footer">
+  <p>Total Monthly: $<span id="totalMonthlyCost">0</span></p>
+</footer>
 </html>

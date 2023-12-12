@@ -1,5 +1,7 @@
 # Project Name
 
+Employee Salary Calculator
+
 # Weekend Challenge: JS Salary Calculator
 
 Your task is to create an application that records employee salaries and adds salaries up to report monthly costs.
