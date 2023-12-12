@@ -2,21 +2,23 @@ console.log('script.js');
 
 //Gobal variables
 
-function submitButton() {
+let submitButton = 0;
+
+function submitButton(event) {
     // console.log('#submitButton');
     // Stop the page from refreshing
     event.parentDefault();
 
         // Select all five employee inputs:
-        const firstNameInput = getByTestId('firstNameInput');
+        const firstNameInput = document.querySelector('#firstNameInput').value;
         console.log(firstNameInput);
-        const lastNameInput = getByTestId('lastNameInput');
+        const lastNameInput = document.querySelector('#lastNameInput').value;
         console.log(lastNameInput);
-        const idInput = getByTestId('idInput');
+        const idInput = document.querySelector('#idInput').value;
         console.log(idInput);
-        const titleInput = getByTestId('titleInput');
+        const titleInput = document.querySelector('#titleInput').value;
         console.log(titleInput);
-        const annualInput = getByTestId('annualSalaryInput');
+        const annualInput = document.querySelector('#annualSalaryInput').value;
         console.log(annualSalaryInput);
         
         // Find the input filed and assign the value to the variable
@@ -74,16 +76,19 @@ function submitButton() {
             } else {
                 footer.classList.remove("over-budget");
 
-//         // Find the tbody on the page so that we can append to it
-//         let salaryCalculator = document.querySelector('#salaryCalculator');
+        // Find the tbody on the page so that we can append to it
+        let salaryCalculator = document.querySelector('#salaryCalculator');
+
+            };
+        };
         
-//         // delete button to remove each of the unwanted rows
+        // delete button to remove each of the unwanted rows
     // function deleteButton(event){
     //     let tr =td.parentNode;
     //     console.log('deleteButton:',event.target); 
     //     let td = event.target.parentNode;
     //     td.parentNode.removeChild(td);    
-    // // };
+    // };
 // };
 
 // let buttonCount = 0;
@@ -108,5 +113,6 @@ function submitButton() {
 // function deletedButton(event) {
 //     let parent = event.target.parentElement.parentElement;
 //     parent.remove("Delete");
-}
-        };
+    // }: 
+
+    // My code is too confusion for myself. It's not working the way I wanted. I am struggling on how to manipulate the DOM. I can't seem to get the code to work and append things to the dom to make it work. 

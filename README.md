@@ -2,10 +2,6 @@
 
 Employee Salary Calculator
 
-# Weekend Challenge: JS Salary Calculator
-
-Your task is to create an application that records employee salaries and adds salaries up to report monthly costs.
-
 ## Requirements:
 
 * This application should have a form with five inputs that collect a new employee's *first name, last name, ID number, job title, annual salary*.
